@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="12.0.1" />
+      <PackageReference Include="MediatR" Version="12.1.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="7.0.13" />
+      <PackageReference Include="MongoDB.Entities" Version="22.1.0" />
+      <PackageReference Include="Moq" Version="4.20.69" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Databases\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Prodavnica.Api\Prodavnica.Api.csproj" />
+      <ProjectReference Include="..\Prodavnica.Application\Prodavnica.Application.csproj" />
+    </ItemGroup>
+
+</Project>
